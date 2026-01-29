@@ -13,7 +13,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>3</initValue>
+      <initValue>2</initValue>
       <name>G_DelayDuration</name>
       <protected>false</protected>
       <valueType>NUMBER</valueType>
