@@ -22,16 +22,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class MobileBaseConfig {
-	
+
 	static Map<String, Object> getMobileConfig() {
-		
+
 		if(!GlobalVariable.G_AppPackage) {
 			KeywordUtil.logInfo("App Gak Berjalan!!")
 		}
-		
+
 		return [
-			"APP_PACKAGE"	: GlobalVariable.G_AppPackage?.toString()?.trim() ?: 'in.sweatco.app',
-			"DELAY_DURATION": (GlobalVariable.G_DelayDuration ?: 3) as Integer
+			"APP_PACKAGE"	: GlobalVariable.G_AppPackage?.toString()?.trim() ?: 'com.sweatco',
+			"DELAY_DURATION": (GlobalVariable.G_DelayDuration ?: 2) as Integer
 		]
 	}
 }

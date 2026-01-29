@@ -23,7 +23,7 @@ import keywords.MobileBaseConfig
 import internal.GlobalVariable
 
 public class AppManager {
-	
+
 	@Keyword
 	static void launchApp() {
 		def config = MobileBaseConfig.getMobileConfig()
