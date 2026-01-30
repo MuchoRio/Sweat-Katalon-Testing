@@ -1,42 +1,41 @@
-[38;5;112m[Appium][0m Welcome to Appium v2.16.0
+[38;5;112m[Appium][0m Welcome to Appium v3.0.2 (REV fbfdbaba008189499958a7aeb1e2c36ab10c067d)
 [38;5;112m[Appium][0m Non-default server args:
-[38;5;112m[Appium][0m { basePath: [32m'/wd/hub'[39m, loglevel: [32m'info'[39m, port: [33m53501[39m }
+[38;5;112m[Appium][0m { basePath: [32m'/wd/hub'[39m, loglevel: [32m'info'[39m, port: [33m51200[39m }
 [38;5;112m[Appium][0m Attempting to load driver uiautomator2...
-[38;5;112m[Appium][0m Appium REST http interface listener started on http://0.0.0.0:53501/wd/hub
+[38;5;112m[Appium][0m Appium REST http interface listener started on http://0.0.0.0:51200/wd/hub
 [38;5;112m[Appium][0m You can provide the following URLs in your client code to connect to this server:
-	http://10.5.0.2:53501/wd/hub
-	http://192.168.100.37:53501/wd/hub
-	http://127.0.0.1:53501/wd/hub (only accessible from the same host)
+	http://127.0.0.1:51200/wd/hub (only accessible from the same host)
+	http://10.224.173.157:51200/wd/hub
 [38;5;112m[Appium][0m Available drivers:
-[38;5;112m[Appium][0m   - uiautomator2@4.2.3 (automationName 'UiAutomator2')
+[38;5;112m[Appium][0m   - uiautomator2@5.0.3 (automationName 'UiAutomator2')
 [38;5;112m[Appium][0m No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
-[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m [90m{}[39m
-[38;5;86m[HTTP][0m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m4 ms - 111[39m [90m[39m
-[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m [90m{}[39m
-[38;5;86m[HTTP][0m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m1 ms - 111[39m [90m[39m
-[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m [90m{"capabilities":{"firstMatch":[{"appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","appium:deviceId":"5843cd0a","appium:deviceName":"realme RMX3472 (Android 14)","appium:fullReset":false,"appium:ignoreHiddenApiPolicyError":true,"appium:newCommandTimeout":1800,"appium:noReset":true,"appium:platformVersion":"14","appium:systemPort":8271,"appium:udid":"5843cd0a","platformName":"ANDROID"}]},"desiredCapabilities":{"appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","appium:deviceId":"5843cd0a","appium:deviceName":"realme RMX3472 (Android 14)","appium:fullReset":false,"appium:ignoreHiddenApiPolicyError":true,"appium:newCommandTimeout":1800,"appium:noReset":true,"appium:platformVersion":"14","appium:systemPort":8271,"appium:udid":"5843cd0a","platformName":"ANDROID"}}[39m
+[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m 
+[38;5;86m[HTTP][0m <-- GET /wd/hub/status 200 2 ms - 199 
+[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m 
+[38;5;86m[HTTP][0m <-- GET /wd/hub/status 200 1 ms - 199 
+[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m {"capabilities":{"firstMatch":[{"appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","appium:deviceId":"5843cd0a","appium:deviceName":"realme RMX3472 (Android 14)","appium:fullReset":false,"appium:ignoreHiddenApiPolicyError":true,"appium:newCommandTimeout":1800,"appium:noReset":true,"appium:platformVersion":"14","appium:systemPort":8294,"appium:udid":"5843cd0a","platformName":"ANDROID"}]},"desiredCapabilities":{"appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","appium:deviceId":"5843cd0a","appium:deviceName":"realme RMX3472 (Android 14)","appium:fullReset":false,"appium:ignoreHiddenApiPolicyError":true,"appium:newCommandTimeout":1800,"appium:noReset":true,"appium:platformVersion":"14","appium:systemPort":8294,"appium:udid":"5843cd0a","platformName":"ANDROID"}}
+[38;5;123m[BaseDriver][0m The following arguments are not known and will be ignored: desiredCapabilities
 [38;5;112m[Appium][0m Attempting to find matching driver for automationName 'uiautomator2' and platformName 'ANDROID'
 [38;5;112m[Appium][0m The 'uiautomator2' driver was installed and matched caps.
-[38;5;112m[Appium][0m Will require it at C:\Users\pucuk\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver
-[38;5;53m[AppiumDriver@db1d][0m Appium v2.16.0 creating new AndroidUiautomator2Driver (v4.2.3) session
-[38;5;53m[AppiumDriver@db1d][0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
-[38;5;53m[AppiumDriver@db1d][0m Appium's BaseDriver version is 9.18.0
-[38;5;53m[AppiumDriver@db1d][0m AndroidUiautomator2Driver's BaseDriver version is 9.18.0
-[38;5;15m[AndroidUiautomator2Driver@b567][0m The following provided capabilities were not recognized by this driver:
-[38;5;15m[AndroidUiautomator2Driver@b567][0m   deviceId
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m Session created with session id: a0d370da-4d26-4aaf-be9f-418044f4a1d7
-[38;5;60m[a0d370da][0m[38;5;229m[ADB][0m Found 3 'build-tools' folders under 'C:\Users\pucuk\AppData\Local\Android\Sdk' (newest first):
-[38;5;60m[a0d370da][0m[38;5;229m[ADB][0m     C:\Users\pucuk\AppData\Local\Android\Sdk\build-tools\35.0.0
-[38;5;60m[a0d370da][0m[38;5;229m[ADB][0m     C:\Users\pucuk\AppData\Local\Android\Sdk\build-tools\34.0.0
-[38;5;60m[a0d370da][0m[38;5;229m[ADB][0m     C:\Users\pucuk\AppData\Local\Android\Sdk\build-tools\33.0.1
-[38;5;60m[a0d370da][0m[38;5;229m[ADB][0m Using 'adb.exe' from 'C:\Users\pucuk\AppData\Local\Android\Sdk\platform-tools\adb.exe'
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m Retrieving device list
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m Using device: 5843cd0a
-[38;5;60m[a0d370da][0m[38;5;229m[ADB][0m Using 'adb.exe' from 'C:\Users\pucuk\AppData\Local\Android\Sdk\platform-tools\adb.exe'
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m Neither 'app' nor 'appPackage' was set. Starting UiAutomator2 without the target application
-[38;5;60m[a0d370da][0m[38;5;229m[ADB][0m Getting device platform version
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m Relaxing hidden api policy
-[38;5;60m[a0d370da][0m[38;5;229m[ADB][0m Failed to set setting keys 'hidden_api_policy_pre_p_apps,hidden_api_policy_p_apps,hidden_api_policy' to '1'. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\pucuk\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 5843cd0a shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1'' exited with code 255'; Command output: 
+[38;5;112m[Appium][0m Will require it at /Users/h25060008/.appium/node_modules/appium-uiautomator2-driver
+[38;5;92m[AppiumDriver@1c35][0m Appium v3.0.2 creating new AndroidUiautomator2Driver (v5.0.3) session
+[38;5;92m[AppiumDriver@1c35][0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+[38;5;92m[AppiumDriver@1c35][0m Appium's BaseDriver version is 10.0.1
+[38;5;92m[AppiumDriver@1c35][0m AndroidUiautomator2Driver's BaseDriver version is 10.0.1
+[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m The following provided capabilities were not recognized by this driver:
+[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m   deviceId
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Session created with session id: bf56dcd9-851c-4d5a-89ba-cefe209956ee
+[38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m Found 1 'build-tools' folders under '/Users/h25060008/.katalon/tools/android_sdk' (newest first):
+[38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m     /Users/h25060008/.katalon/tools/android_sdk/build-tools/29.0.3
+[38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m Using 'adb' from '/Users/h25060008/.katalon/tools/android_sdk/platform-tools/adb'
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Retrieving device list
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Using device: 5843cd0a
+[38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m Using 'adb' from '/Users/h25060008/.katalon/tools/android_sdk/platform-tools/adb'
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Neither 'app' nor 'appPackage' was set. Starting UiAutomator2 without the target application
+[38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m Getting device platform version
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Relaxing hidden api policy
+[38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m Using 'aapt2' from '/Users/h25060008/.katalon/tools/android_sdk/build-tools/29.0.3/aapt2'
+[38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m Failed to set setting keys 'hidden_api_policy_pre_p_apps,hidden_api_policy_p_apps,hidden_api_policy' to '1'. Original error: Error executing adbExec. Original error: 'Command '/Users/h25060008/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 5843cd0a shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1'' exited with code 255'; Command output: 
 Exception occurred while executing 'put':
 java.lang.SecurityException: Permission denial, must have one of: [android.permission.WRITE_SECURE_SETTINGS]
 	at com.android.providers.settings.SettingsProvider.enforceHasAtLeastOnePermission(SettingsProvider.java:2705)
@@ -91,8 +90,7 @@ java.lang.SecurityException: Permission denial, must have one of: [android.permi
 	at android.os.Binder.execTransactInternal(Binder.java:1392)
 	at android.os.Binder.execTransact(Binder.java:1299)
 
-[38;5;60m[a0d370da][0m[38;5;229m[ADB][0m Using 'aapt2.exe' from 'C:\Users\pucuk\AppData\Local\Android\Sdk\build-tools\35.0.0\aapt2.exe'
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m Unable to set mock location for app 'io.appium.settings': Error executing adbExec. Original error: 'Command 'C:\\Users\\pucuk\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 5843cd0a shell appops set io.appium.settings android\:mock_location allow' exited with code 255'; Command output: 
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Unable to set mock location for app 'io.appium.settings': Error executing adbExec. Original error: 'Command '/Users/h25060008/.katalon/tools/android_sdk/platform-tools/adb -P 5037 -s 5843cd0a shell appops set io.appium.settings android\:mock_location allow' exited with code 255'; Command output: 
 Exception occurred while executing 'set':
 java.lang.SecurityException: uid 2000 does not have android.permission.MANAGE_APP_OPS_MODES.
 	at android.app.ContextImpl.enforce(ContextImpl.java:2384)
@@ -111,36 +109,98 @@ java.lang.SecurityException: uid 2000 does not have android.permission.MANAGE_AP
 	at android.os.Binder.execTransactInternal(Binder.java:1392)
 	at android.os.Binder.execTransact(Binder.java:1299)
 
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m Server packages are not going to be (re)installed
-[38;5;60m[a0d370da][0m[38;5;229m[ADB][0m Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m Starting UIAutomator2 server 7.5.2
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m Using UIAutomator2 server from 'C:\Users\pucuk\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v7.5.2.apk' and test from 'C:\Users\pucuk\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m Waiting up to 30000ms for UiAutomator2 to be online...
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m socket hang up
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m socket hang up
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m socket hang up
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m Determined the downstream protocol as 'W3C'
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m Screen already unlocked, doing nothing
-[38;5;60m[a0d370da][0m[38;5;53m[AppiumDriver@db1d][0m New AndroidUiautomator2Driver session created successfully, session a0d370da-4d26-4aaf-be9f-418044f4a1d7 added to master session list
-[38;5;60m[a0d370da][0m[38;5;86m[HTTP][0m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m5025 ms - 1123[39m [90m[39m
-[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/status[39m [90m{}[39m
-[38;5;86m[HTTP][0m [37m<-- GET /status [39m[33m404[39m [90m6 ms - 211[39m [90m[39m
-[38;5;60m[a0d370da][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/a0d370da-4d26-4aaf-be9f-418044f4a1d7/timeouts[39m [90m{"implicit":60000}[39m
-[38;5;60m[a0d370da][0m[38;5;86m[HTTP][0m [37m<-- POST /wd/hub/session/a0d370da-4d26-4aaf-be9f-418044f4a1d7/timeouts [39m[32m200[39m [90m2 ms - 14[39m [90m[39m
-[38;5;60m[a0d370da][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/a0d370da-4d26-4aaf-be9f-418044f4a1d7/execute/sync[39m [90m{"args":[],"script":"mobile: getSystemBars"}[39m
-[38;5;60m[a0d370da][0m[38;5;86m[HTTP][0m [37m<-- POST /wd/hub/session/a0d370da-4d26-4aaf-be9f-418044f4a1d7/execute/sync [39m[32m200[39m [90m106 ms - 152[39m [90m[39m
-[38;5;60m[a0d370da][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/a0d370da-4d26-4aaf-be9f-418044f4a1d7/execute/sync[39m [90m{"args":[{"appId":"in.sweatco.app","bundleId":"in.sweatco.app"}],"script":"mobile: activateApp"}[39m
-[38;5;60m[a0d370da][0m[38;5;123m[BaseDriver][0m The following script arguments are not known and will be ignored: bundleId
-[38;5;60m[a0d370da][0m[38;5;86m[HTTP][0m [37m<-- POST /wd/hub/session/a0d370da-4d26-4aaf-be9f-418044f4a1d7/execute/sync [39m[32m200[39m [90m284 ms - 14[39m [90m[39m
-[38;5;60m[a0d370da][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/a0d370da-4d26-4aaf-be9f-418044f4a1d7/source[39m [90m{}[39m
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m Replacing sessionId 59bfa856-a4cb-4935-99b5-6f659ce9a0d2 with a0d370da-4d26-4aaf-be9f-418044f4a1d7
-[38;5;60m[a0d370da][0m[38;5;86m[HTTP][0m [37m<-- GET /wd/hub/session/a0d370da-4d26-4aaf-be9f-418044f4a1d7/source [39m[32m200[39m [90m10782 ms - 162337[39m [90m[39m
-[38;5;60m[a0d370da][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/a0d370da-4d26-4aaf-be9f-418044f4a1d7/screenshot[39m [90m{}[39m
-[38;5;60m[a0d370da][0m[38;5;86m[HTTP][0m [37m<-- GET /wd/hub/session/a0d370da-4d26-4aaf-be9f-418044f4a1d7/screenshot [39m[32m200[39m [90m1875 ms - 2355756[39m [90m[39m
-[38;5;60m[a0d370da][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/a0d370da-4d26-4aaf-be9f-418044f4a1d7/source[39m [90m{}[39m
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m Driver proxy active, passing request on via HTTP proxy
-[38;5;60m[a0d370da][0m[38;5;15m[AndroidUiautomator2Driver@b567][0m Replacing sessionId 59bfa856-a4cb-4935-99b5-6f659ce9a0d2 with a0d370da-4d26-4aaf-be9f-418044f4a1d7
-[38;5;60m[a0d370da][0m[38;5;86m[HTTP][0m [37m<-- GET /wd/hub/session/a0d370da-4d26-4aaf-be9f-418044f4a1d7/source [39m[32m200[39m [90m1132 ms - 50958[39m [90m[39m
-[38;5;60m[a0d370da][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/a0d370da-4d26-4aaf-be9f-418044f4a1d7/screenshot[39m [90m{}[39m
-[38;5;60m[a0d370da][0m[38;5;86m[HTTP][0m [37m<-- GET /wd/hub/session/a0d370da-4d26-4aaf-be9f-418044f4a1d7/screenshot [39m[32m200[39m [90m2908 ms - 2753792[39m [90m[39m
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Server packages are not going to be (re)installed
+[38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Starting UIAutomator2 server 8.1.1
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Using UIAutomator2 server from '/Users/h25060008/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v8.1.1.apk' and test from '/Users/h25060008/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Waiting up to 30000ms for UiAutomator2 to be online...
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m socket hang up
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m socket hang up
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Determined the downstream protocol as 'W3C'
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Screen already unlocked, doing nothing
+[38;5;211m[bf56dcd9][0m[38;5;92m[AppiumDriver@1c35][0m New AndroidUiautomator2Driver session created successfully, session bf56dcd9-851c-4d5a-89ba-cefe209956ee added to master session list
+[38;5;211m[bf56dcd9][0m[38;5;86m[HTTP][0m <-- POST /wd/hub/session 200 4193 ms - 1123 
+[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/status[39m 
+[38;5;86m[HTTP][0m <-- GET /status 404 4 ms - 3102 
+[38;5;211m[bf56dcd9][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/bf56dcd9-851c-4d5a-89ba-cefe209956ee/timeouts[39m {"implicit":60000}
+[38;5;211m[bf56dcd9][0m[38;5;86m[HTTP][0m <-- POST /wd/hub/session/bf56dcd9-851c-4d5a-89ba-cefe209956ee/timeouts 200 1 ms - 14 
+[38;5;211m[bf56dcd9][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/bf56dcd9-851c-4d5a-89ba-cefe209956ee/execute/sync[39m {"script":"mobile: getSystemBars","args":[]}
+[38;5;211m[bf56dcd9][0m[38;5;86m[HTTP][0m <-- POST /wd/hub/session/bf56dcd9-851c-4d5a-89ba-cefe209956ee/execute/sync 200 160 ms - 152 
+[38;5;211m[bf56dcd9][0m[38;5;86m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/bf56dcd9-851c-4d5a-89ba-cefe209956ee/execute/sync[39m {"script":"mobile: activateApp","args":[{"appId":"in.sweatco.app","bundleId":"in.sweatco.app"}]}
+[38;5;211m[bf56dcd9][0m[38;5;123m[BaseDriver][0m The following arguments are not known and will be ignored: bundleId
+[38;5;211m[bf56dcd9][0m[38;5;86m[HTTP][0m <-- POST /wd/hub/session/bf56dcd9-851c-4d5a-89ba-cefe209956ee/execute/sync 200 240 ms - 14 
+[38;5;211m[bf56dcd9][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/bf56dcd9-851c-4d5a-89ba-cefe209956ee/source[39m {}
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Driver proxy active, passing request on via HTTP proxy
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Replacing sessionId 9c29115f-4784-4088-927f-5ef1e459bab1 with bf56dcd9-851c-4d5a-89ba-cefe209956ee
+[38;5;211m[bf56dcd9][0m[38;5;86m[HTTP][0m <-- GET /wd/hub/session/bf56dcd9-851c-4d5a-89ba-cefe209956ee/source 200 11365 ms - 174921 
+[38;5;211m[bf56dcd9][0m[38;5;86m[HTTP][0m [37m-->[39m [37mGET[39m [37m/wd/hub/session/bf56dcd9-851c-4d5a-89ba-cefe209956ee/screenshot[39m {}
+[38;5;211m[bf56dcd9][0m[38;5;86m[HTTP][0m <-- GET /wd/hub/session/bf56dcd9-851c-4d5a-89ba-cefe209956ee/screenshot 200 1114 ms - 1682640 
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Shutting down because we waited 1800 seconds for a command
+[38;5;211m[bf56dcd9][0m[38;5;92m[AppiumDriver@1c35][0m Ending session, cause was 'New Command Timeout of 1800 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
+[38;5;211m[bf56dcd9][0m[38;5;92m[AppiumDriver@1c35][0m Removing session 'bf56dcd9-851c-4d5a-89ba-cefe209956ee' from our master session list
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Did not get the confirmation of UiAutomator2 server session deletion. Original error: 'DELETE /' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+[38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m Error sending command, reconnecting device and retrying: shell,pgrep,-f,\(\[\[:blank:\]\]\|\^\)io\.appium\.uiautomator2\.server\(:\[a-zA-Z0-9_-\]\+\)\?\(\[\[:blank:\]\]\|\$\)
+[38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m Error sending command, reconnecting device and retrying: shell,am,force-stop,io.appium.uiautomator2.server
+[38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m Error sending command, reconnecting device and retrying: shell,am,force-stop,io.appium.uiautomator2.server.test
+[38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m Error sending command, reconnecting device and retrying: shell,dumpsys,activity,services,io.appium.settings/.recorder.RecorderService
+[38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m Error sending command, reconnecting device and retrying: forward,--remove,tcp:8294
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Unable to remove system port forward: Could not find a connected Android device in 20000ms
+[38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Restoring hidden api policy to the device default configuration
+[38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m Error sending command, reconnecting device and retrying: shell,settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy
+[38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m Failed to delete keys 'hidden_api_policy_pre_p_apps,hidden_api_policy_p_apps,hidden_api_policy'. Original error: Could not find a connected Android device in 20000ms
+have one of: [android.permission.WRITE_SECURE_SETTINGS]
+	at com.android.providers.settings.SettingsProvider.enforceHasAtLeastOnePermission(SettingsProvider.java:2705)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1610)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1602)
+	at com.android.providers.settings.SettingsProvider.deleteGlobalSetting(SettingsProvider.java:1573)
+	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:597)
+	at android.content.ContentProvider.call(ContentProvider.java:2716)
+	at android.content.ContentProvider$Transport.call(ContentProvider.java:641)
+	at com.android.providers.settings.SettingsService$MyShellCommand.deleteForUser(SettingsService.java:411)
+	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:285)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:53)
+	at android.os.Binder.shellCommand(Binder.java:1092)
+	at android.os.Binder.onTransact(Binder.java:912)
+	at android.os.Binder.execTransactInternal(Binder.java:1392)
+	at android.os.Binder.execTransact(Binder.java:1299)
+
+Exception occurred while executing 'delete':
+java.lang.SecurityException: Permission denial, must have one of: [android.permission.WRITE_SECURE_SETTINGS]
+	at com.android.providers.settings.SettingsProvider.enforceHasAtLeastOnePermission(SettingsProvider.java:2705)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1610)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1602)
+	at com.android.providers.settings.SettingsProvider.deleteGlobalSetting(SettingsProvider.java:1573)
+	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:597)
+	at android.content.ContentProvider.call(ContentProvider.java:2716)
+	at android.content.ContentProvider$Transport.call(ContentProvider.java:641)
+	at com.android.providers.settings.SettingsService$MyShellCommand.deleteForUser(SettingsService.java:411)
+	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:285)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:53)
+	at android.os.Binder.shellCommand(Binder.java:1092)
+	at android.os.Binder.onTransact(Binder.java:912)
+	at android.os.Binder.execTransactInternal(Binder.java:1392)
+	at android.os.Binder.execTransact(Binder.java:1299)
+
+Exception occurred while executing 'delete':
+java.lang.SecurityException: Permission denial, must have one of: [android.permission.WRITE_SECURE_SETTINGS]
+	at com.android.providers.settings.SettingsProvider.enforceHasAtLeastOnePermission(SettingsProvider.java:2705)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1610)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1602)
+	at com.android.providers.settings.SettingsProvider.deleteGlobalSetting(SettingsProvider.java:1573)
+	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:597)
+	at android.content.ContentProvider.call(ContentProvider.java:2716)
+	at android.content.ContentProvider$Transport.call(ContentProvider.java:641)
+	at com.android.providers.settings.SettingsService$MyShellCommand.deleteForUser(SettingsService.java:411)
+	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:285)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:53)
+	at android.os.Binder.shellCommand(Binder.java:1092)
+	at android.os.Binder.onTransact(Binder.java:912)
+	at android.os.Binder.execTransactInternal(Binder.java:1392)
+	at android.os.Binder.execTransact(Binder.java:1299)
+

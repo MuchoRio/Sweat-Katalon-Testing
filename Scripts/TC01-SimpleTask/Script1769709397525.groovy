@@ -19,34 +19,49 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import keywords.AppManager
 import keywords.MobileBaseConfig
+import keywords.ScreenshotHelper
 
 AppManager.launchApp()
 
 def mobileBaseConfig 	= MobileBaseConfig.getMobileConfig()
 int delay 				= mobileBaseConfig.DELAY_DURATION
-
-Mobile.waitForElementPresent(findTestObject('Object Repository/Dashboard/01. ViewGroup - userAvatar'), 10, FailureHandling.STOP_ON_FAILURE)
+def screenshotPath 		= ScreenshotHelper.getScreenshotDirectory("Sweat", "Test Case", "Positive Test Case")
+//
+//AtomicInteger screenshotCounter = new AtomicInteger(1)
 
 Mobile.delay(delay)
 
-Mobile.tap(findTestObject('Object Repository/Dashboard/01. ViewGroup - userAvatar'), delay, FailureHandling.STOP_ON_FAILURE)
+//Mobile.takeScreenshot(screenshotPath + String.format("%02d.png", screenshotCounter.getAndIncrement()))
+
+Mobile.takeScreenshot(screenshotPath + '01.png')
+
+Mobile.tap(findTestObject('Object Repository/Dashboard/01. ViewGroup - Circle Avatar'), delay, FailureHandling.STOP_ON_FAILURE)
 
 boolean isHeaderProfilSayaPresent = Mobile.waitForElementPresent(findTestObject('Object Repository/Dashboard/Profile/02. TextView - Profil saya'), delay, FailureHandling.OPTIONAL)
 boolean isHeaderProfilSayaExist = Mobile.verifyElementText(findTestObject('Object Repository/Dashboard/Profile/02. TextView - Profil saya'), 'Profil saya', FailureHandling.OPTIONAL)
 
 if(isHeaderProfilSayaPresent || isHeaderProfilSayaExist) {
 	KeywordUtil.markPassed("Berhasil menemukan Header Profil Saya!")
+	
+	Mobile.takeScreenshot(screenshotPath + '02.png')
 } else {
 	KeywordUtil.markFailed("Gagal menemukan Header Profil Saya")
 }
 
-Mobile.enhancedScrollToText(findTestObject('Object Repository/Dashboard/Profile/02. TextView - 3-Day Streak'), '3-Day Streak', delay)
+Mobile.scrollToText('3-Day Streak')
+
+
+Mobile.takeScreenshot(screenshotPath + '03.png')
 
 Mobile.tap(findTestObject('Object Repository/Dashboard/Profile/02. ViewGroup - Rewards'), delay, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.pressBack()
 
-Mobile.enhancedScrollToText(findTestObject('Object Repository/Dashboard/Profile/02. TextView - Profil saya'), 'Profil saya', delay)
+Mobile.takeScreenshot(screenshotPath + '04.png')
+
+Mobile.tap(findTestObject('Object Repository/Dashboard/Profile/02. ViewGroup - Close'), delay, FailureHandling.STOP_ON_FAILURE)
+
+
+Mobile.takeScreenshot(screenshotPath + '05.png')
 
 Mobile.tap(findTestObject('Object Repository/Dashboard/Profile/02. ViewGroup - Edit Profile'), delay, FailureHandling.STOP_ON_FAILURE)
 
@@ -55,6 +70,8 @@ boolean isHeaderEditProfilExist = Mobile.verifyElementText(findTestObject('Objec
 
 if(isHeaderEditProfilPresent || isHeaderEditProfilExist) {
 	KeywordUtil.markPassed("Berhasil menemukan Header Edit profil!")
+	
+	Mobile.takeScreenshot(screenshotPath + '06.png')
 } else {
 	KeywordUtil.markFailed("Gagal menemukan Header Edit profil")
 }
@@ -63,10 +80,15 @@ Mobile.setText(findTestObject('Object Repository/Dashboard/Profile/Edit/03. Edit
 
 Mobile.pressBack()
 
+
+Mobile.takeScreenshot(screenshotPath + '07.png')
+
 Mobile.tap(findTestObject('Object Repository/Dashboard/Profile/Edit/03. ViewGroup - Simpan Perubahan'), delay, FailureHandling.STOP_ON_FAILURE)
 
 if(isHeaderProfilSayaPresent || isHeaderProfilSayaExist) {
 	KeywordUtil.markPassed("Berhasil menemukan Header Profil Saya!")
+	
+	Mobile.takeScreenshot(screenshotPath + '08.png')
 } else {
 	KeywordUtil.markFailed("Gagal menemukan Header Profil Saya")
 }

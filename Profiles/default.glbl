@@ -18,4 +18,11 @@
       <protected>false</protected>
       <valueType>NUMBER</valueType>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/Screenshot/'</initValue>
+      <name>G_ScreenshotDirectory</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
