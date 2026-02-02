@@ -27,33 +27,30 @@ import internal.GlobalVariable
 public class ScreenshotHelper {
 
 	@Keyword
-	static String getScreenshotDirectory(String parentFolder = "", String customName = "", String childFolder = "", String subFolder1 = "", String subFolder2 = "", String subFolder3 = "") {
+	static String getScreenshotDirectory(String parentFolder = "", String customName = "", String childFolder = "") {
 		def config 					= MobileBaseConfig.getMobileConfig()
-		String baseDir 				= config.SCREENSHOT_PATH?.toString()?.trim() ?: "${RunConfiguration.getProjectDir()}/Screenshots/"
-		if (!baseDir.startsWith("/")) baseDir = "/" + baseDir
-		if (!baseDir.endsWith("/")) baseDir = baseDir + "/"
-
+		
 		String projectDir 			= RunConfiguration.getProjectDir()
+		String screenshotDir 		= config.SCREENSHOT_DIR?.toString()?.trim() ?: "/Screenshots/"
+		
 		String currentTestCaseName 	= RunConfiguration.getExecutionSourceName()
-		String filteredTestCaseName = currentTestCaseName.split("/")[-1]
+		String filteredTestCaseName = currentTestCaseName.split("/")[-1] ?: "UnknownTestCase"
 
-		String parentSegment 		= parentFolder	? 	"${parentFolder}/" 	: ""
-		String customSegment 		= customName	? 	"${customName}/" 	: ""
-		String childSegment 		= childFolder	? 	"${childFolder}/" 	: ""
-		String subFolder1Segment 	= subFolder1	? 	"${subFolder1}/" 	: ""
-		String subFolder2Segment 	= subFolder2	? 	"${subFolder2}/" 	: ""
-		String subFolder3Segment	= subFolder3	?	"${subFolder3}/" 	: ""
-
-		String path 				= "${projectDir}${baseDir}${parentSegment}${customSegment}${childSegment}${subFolder1Segment}${subFolder2Segment}${subFolder3Segment}${filteredTestCaseName}/"
-		path 						= path.replaceAll(/[\/]+/, "/")
+		Path path = Paths.get(
+			projectDir,
+			screenshotDir,
+			parentFolder,
+			customName,
+			childFolder,
+			filteredTestCaseName
+		).normalize()
 
 		try {
-			Path directoryPath = Paths.get(path)
-			Files.createDirectories(directoryPath)
+			Files.createDirectories(path)
 		} catch (Exception e) {
 			println "! ERROR create screenshot folder: ${e.message}"
 		}
 
-		return path.endsWith("/") ? path : path + "/"
+		return path.toString()
 	}
 }

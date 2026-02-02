@@ -148,11 +148,12 @@ java.lang.SecurityException: uid 2000 does not have android.permission.MANAGE_AP
 [38;5;211m[bf56dcd9][0m[38;5;-59m[AndroidUiautomator2Driver@ff1c][0m Restoring hidden api policy to the device default configuration
 [38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m Error sending command, reconnecting device and retrying: shell,settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy
 [38;5;211m[bf56dcd9][0m[38;5;229m[ADB][0m Failed to delete keys 'hidden_api_policy_pre_p_apps,hidden_api_policy_p_apps,hidden_api_policy'. Original error: Could not find a connected Android device in 20000ms
-have one of: [android.permission.WRITE_SECURE_SETTINGS]
-	at com.android.providers.settings.SettingsProvider.enforceHasAtLeastOnePermission(SettingsProvider.java:2705)
-	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1610)
-	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1602)
-	at com.android.providers.settings.SettingsProvider.deleteGlobalSetting(SettingsProvider.java:1573)
+[38;5;211m[bf56dcd9][0m[38;5;86m[HTTP][0m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/bf56dcd9-851c-4d5a-89ba-cefe209956ee[39m {}
+[38;5;211m[bf56dcd9][0m[38;5;86m[HTTP][0m <-- DELETE /wd/hub/session/bf56dcd9-851c-4d5a-89ba-cefe209956ee 404 15 ms - 2856 
+[38;5;112m[Appium][0m Received SIGTERM - shutting down
+[38;5;86m[HTTP][0m Closing Appium HTTP server
+[38;5;86m[HTTP][0m Appium HTTP server has been successfully closed after 2ms
+.java:1573)
 	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:597)
 	at android.content.ContentProvider.call(ContentProvider.java:2716)
 	at android.content.ContentProvider$Transport.call(ContentProvider.java:641)
@@ -204,3 +205,6 @@ java.lang.SecurityException: Permission denial, must have one of: [android.permi
 	at android.os.Binder.execTransactInternal(Binder.java:1392)
 	at android.os.Binder.execTransact(Binder.java:1299)
 
+[38;5;112m[Appium][0m Received SIGTERM - shutting down
+[38;5;86m[HTTP][0m Closing Appium HTTP server
+[38;5;86m[HTTP][0m Appium HTTP server has been successfully closed after 16ms

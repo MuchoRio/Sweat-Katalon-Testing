@@ -27,13 +27,17 @@ public class AppManager {
 	@Keyword
 	static void launchApp() {
 		def config = MobileBaseConfig.getMobileConfig()
+		String appPackage = config.APP_PACKAGE
+		Integer delayDuration = config.DELAY_DURATION as Integer
+		
+		KeywordUtil.logInfo("Sedang menjalankan aplikasi: " + appPackage)
+		Mobile.delay(delayDuration)
+		
 		try {
-			KeywordUtil.logInfo("Aplikasi sedang Berjalan ${config.APP_PACKAGE}")
-			Mobile.delay(config.DELAY_DURATION)
-			Mobile.startExistingApplication(config.APP_PACKAGE, FailureHandling.STOP_ON_FAILURE)
+			Mobile.startExistingApplication(appPackage, FailureHandling.STOP_ON_FAILURE)
 			KeywordUtil.markPassed("Aplikasi Berjalan Sempurna, melanjutkan ke Test Casenya!")
 		} catch (Exception e) {
-			KeywordUtil.markError("Aplikasi Tidak Ditemukan: ${config.APP_PACKAGE}" + e.message)
+			KeywordUtil.markError("Aplikasi Tidak Ditemukan: " + appPackage + e.message)
 		}
 	}
 }

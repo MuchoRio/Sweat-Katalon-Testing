@@ -24,16 +24,27 @@ import internal.GlobalVariable
 public class MobileBaseConfig {
 
 	static Map<String, Object> getMobileConfig() {
-
-		if(!GlobalVariable.G_AppPackage) {
-			KeywordUtil.logInfo("App Gak Berjalan!!")
+		
+		String appPackage 		= GlobalVariable.G_AppPackage?.toString()?.trim()
+		Integer delayDuration 	= (GlobalVariable.G_DelayDuration ?: 2) as Integer
+		String projectDir 		= RunConfiguration.getProjectDir()
+		String screenshotDir 	= GlobalVariable.G_ScreenshotDirectory?.toString()?.trim()
+		
+		if(!appPackage) {
+			KeywordUtil.markWarning("G_AppPackage kosong, pakai default")
+			appPackage = 'com.sweatco'
 		}
+		
+		if (!screenshotDir) {
+			screenshotDir = "/Screenshot/"
+		}
+		
 
 		return [
-			"APP_PACKAGE"		: GlobalVariable.G_AppPackage?.toString()?.trim() ?: 'com.sweatco',
-			"PROJECT_PATH"      : RunConfiguration.getProjectDir(),
-			"SCREENSHOT_PATH" 	: GlobalVariable.G_ScreenshotDirectory?.toString()?.trim()	?: "/Screenshot/",
-			"DELAY_DURATION" 	: (GlobalVariable.G_DelayDuration ?: 2) as Integer
+			"APP_PACKAGE"		: appPackage,
+			"PROJECT_DIR" 		: projectDir,
+			"SCREENSHOT_DIR" 	: screenshotDir,
+			"DELAY_DURATION" 	: delayDuration
 		]
 	}
 }
